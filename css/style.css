@@ -1,0 +1,178 @@
+@charset "UTF-8";
+/* line 11, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* line 18, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.urna {
+  background-color: #dbd5c9;
+  padding: 30px;
+  display: flex;
+}
+
+/* line 23, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.urna .tela {
+  width: 500px;
+  height: 320px;
+  background: linear-gradient(to right, #e8e8e8e8, #c1c1c1c1);
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 32, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.urna .teclado {
+  background-color: #403a3a;
+  margin-left: 30px;
+}
+
+/* line 38, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top {
+  display: flex;
+  flex: 1;
+}
+
+/* line 42, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-left {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* line 48, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-left .top-left-1 {
+  display: flex;
+  align-items: center;
+  height: 50px;
+}
+
+/* line 54, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-left .top-left-2 {
+  display: flex;
+  justify-content: center;
+  height: 50px;
+}
+
+/* line 60, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-left .top-left-3 {
+  height: 50px;
+}
+
+/* line 64, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-left .top-left-4 {
+  flex: 1;
+  line-height: 30px;
+}
+
+/* line 71, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.numero {
+  display: inline-block;
+  width: 30px;
+  height: 40px;
+  border: 1px solid #000;
+  text-align: center;
+  line-height: 40px;
+  font-size: 25px;
+}
+
+/* line 81, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.pisca {
+  animation: pisca 1s infinite;
+}
+
+@keyframes pisca {
+  0% {
+    opacity: 0.2;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.2;
+  }
+}
+
+/* line 92, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-right {
+  width: 90px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/* line 99, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-right-1 {
+  border: 1px solid #000;
+  background-color: #fff;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* line 105, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-right-1 img {
+  width: 100%;
+}
+
+/* line 110, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.top .top-right-1.small {
+  width: 80%;
+  font-size: 12px;
+}
+
+/* line 118, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.bottom {
+  height: 50px;
+  font-size: 15px;
+  border-top: 2px solid #000;
+  padding-left: 20px;
+}
+
+/* line 125, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.teclado-linha {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+/* line 130, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.teclado-linha .teclado-botao {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  font-size: 25px;
+  margin: 10px;
+  cursor: pointer;
+  box-shadow: 3px 3px 0 #555;
+}
+
+/* line 143, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.teclado-linha .botao-branco {
+  background-color: #fff;
+  color: #000;
+  font-size: 15px;
+}
+
+/* line 149, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.teclado-linha .botao-corrige {
+  background-color: #F09046;
+  color: #000;
+  font-size: 15px;
+}
+
+/* line 155, ../../../../../OneDrive/Área de Trabalho/Urna_Eletrônica/css/scss/style.scss */
+.teclado-linha .botao-confirma {
+  background-color: #48c079;
+  font-size: 15px;
+  width: 90px;
+  height: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+//Cores
+$bege: #dbd5c9;
+$cinza:#e8e8e8e8;
+$cinza-medio:#c1c1c1c1;
+$cinza-escuro: #403a3a;
+//Fontes
+$fonte-1:15px;
+$fonte-2:20px;
+$fonte-3: 25px;
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.urna{
+    background-color: $bege;
+    padding: 30px;
+    display: flex;
+
+    .tela{
+        width: 500px;
+        height: 320px;
+        background: linear-gradient(to right, $cinza, $cinza-medio);
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .teclado{
+        background-color: $cinza-escuro;
+        margin-left: 30px;
+    }
+} 
+
+.top{
+    display: flex;
+    flex: 1;
+
+    .top-left{
+        display: flex;
+        flex-direction: column;
+        flex: 1;
+        padding-left: 20px;
+
+        .top-left-1{
+            display: flex;
+            align-items: center;
+            height: 50px;
+        }
+
+        .top-left-2{
+            display: flex;
+            justify-content: center;
+            height: 50px;
+        }
+
+        .top-left-3{
+            height: 50px;
+        }
+
+        .top-left-4{
+            flex: 1;
+            line-height: 30px;       
+        }
+    }
+}
+
+.numero{
+    display: inline-block;
+    width: 30px;
+    height: 40px;
+    border: 1px solid #000;
+    text-align: center;
+    line-height: 40px;
+    font-size: $fonte-3;
+}
+
+.pisca{
+    animation: pisca 1s infinite;
+}
+
+@keyframes pisca{
+    0%{opacity: 0.2;}
+    50%{opacity: 1;}
+    100%{opacity: 0.2;}
+}
+
+.top{
+    .top-right{
+        width: 90px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .top-right-1{
+        border: 1px solid #000;
+        background-color: #fff;
+        text-align: center;
+        font-size: 14px;
+
+        img{
+            width: 100%;
+        }
+    }
+
+    .top-right-1.small{
+        width: 80%;
+        font-size: 12px;
+    }
+
+}
+
+.bottom{
+    height: 50px;
+    font-size: $fonte-1;
+    border-top: 2px solid #000;
+    padding-left: 20px;
+}
+
+.teclado-linha{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    .teclado-botao{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70px;
+        height: 40px;
+        background-color: #000;
+        color: #fff;
+        font-size: $fonte-3;
+        margin: 10px;
+        cursor: pointer;
+        box-shadow: 3px 3px 0 #555;
+    }
+    .botao-branco{
+        background-color: #fff;
+        color: #000;
+        font-size: $fonte-1;
+    }
+    
+    .botao-corrige{
+        background-color: #F09046;
+        color: #000;
+        font-size: $fonte-1;
+    }
+    
+    .botao-confirma{
+        background-color: #48c079;
+        font-size: $fonte-1;
+        width: 90px;
+        height: 50px;
+    }
+
+}
+
