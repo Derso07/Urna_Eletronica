@@ -108,7 +108,7 @@ body{
     }
 
     .top-right-1.small{
-        width: 80%;
+        width: 88%;
         font-size: 12px;
     }
 
@@ -162,6 +162,15 @@ body{
 
 .aviso-grande{
     font-size: $fonte-3;
+    font-weight: bold;
+}
+
+.aviso-fim{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    font-size: 85px;
     font-weight: bold;
 }
 
